@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abood.youhu">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="YouHU"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+
+
+        <activity android:name=".LoginActivity"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".HomeAdmin"
+            android:label="admin_activity">
+            <intent-filter>
+                <action android:name="com.example.abood.youhu.HomeAdmin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PictureDetailActivity"
+            android:label="picture_detail">
+
+        </activity>
+
+        <activity android:name=".LectureDetailActivity"
+            android:label="lecture_detail"
+            >
+        </activity>
+
+
+
+        <activity android:name=".HomeActivity"
+            android:label="@string/home_activity">
+            <intent-filter>
+                <action android:name="com.example.abood.youhu.HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
